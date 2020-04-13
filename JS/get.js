@@ -36,7 +36,7 @@ button.addEventListener("click", function() {
   var opt = getSelectedOption(sel);
   el.value = opt.value;
 
-  let url = "https://thevirustracker.com/free-api?countryTotal=" + el.value;
+  let url = "https://api.thevirustracker.com/free-api?countryTotal=" + el.value;
   fetch(url)
     .then(resp => resp.json())
     .then(data => {
